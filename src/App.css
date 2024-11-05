@@ -1,38 +1,134 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
 .App {
   text-align: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.group-selector {
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.group-selector label {
+  margin-right: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.group-selector select {
+  margin-right: 20px;
+}
+
+.board {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  background-color: #F4F6FA;
+}
+
+.column {
+  flex: 1;
+  margin: 0 10px;
+}
+
+
+.card {
+  background-color: #FFFFFF;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.card h3 {
+  margin: 0;
+}
+.featur_req{
+  display: flex;
+  width: max-content;
+  padding-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: small;
+}
+
+.dot {
+  width: 30px;
+}
+
+.profile_pic{
+  width: 50px;
+}
+.profile_line{
+  display: flex;
+  justify-content: space-between;
+}
+.head_title{
+  display: flex;
+}
+.head_title p{
+  padding-left: 5px;
+}
+.card_head{
+  display: flex;
+  justify-content: space-between;
+}
+
+.group-selector {
+  position: relative;
+  display:block;
+  padding-left: 30px;
+}
+
+.display-button {
+  background: none;
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.icon {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.rotate {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.dropdown-item label {
+  font-size: 12px;
+  margin-right: 10px;
+  color: #555;
+}
+
+.dropdown-item select {
+  flex-grow: 1;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
 }
